@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+body {
+	font-family:monospace;
+}
+  div.host_info {
+	margin-top:20px;
+}
+th, td {
+	text-align:left;
+	padding-right:20px;
+}
+td.numeric {
+	text-align:right;
+}
