@@ -2,8 +2,6 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: root
-  password:
   host: localhost
 
 development:
@@ -17,8 +15,6 @@ test:
 production: 
   adapter: mysql2 
   encoding: utf8 
-  database: <%= ENV['RDS_DB_NAME'] %>
-  username: <%= ENV['RDS_USERNAME'] %>
-  password: <%= ENV['RDS_PASSWORD'] %>
-  host: <%= ENV['RDS_HOSTNAME'] %>
-  port: <%= ENV['RDS_PORT'] %>
+  database: cows_production
+  username: <%= ENV['CAP_DB_USER'] %>
+  password: <%= ENV['CAP_DB_PASS'] %>
